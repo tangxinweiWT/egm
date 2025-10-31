@@ -1,0 +1,35 @@
+spring:
+  profiles:
+    active:
+      - dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  # 上传文件大小限制
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    spring.jpa: TRACE
+  file:
+    path: logs/
+    name: demo-log.log
+
+token:
+  # TOKEN 过期时间
+  expired: 720000
+
+
+knife4j:
+  production: true
+  enable: false
+
+
+jwt:
+  secret: AS22172yAA!
+  expiredTime: 360000

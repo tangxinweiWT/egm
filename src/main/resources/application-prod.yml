@@ -1,0 +1,26 @@
+server:
+  port: 9080
+  servlet:
+    context-path: /demo-api
+
+spring:
+  datasource:
+    url: jdbc:postgresql://61.181.71.234:15432/demo_db
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: tjuyr123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+
+config:
+  path: /Users/yushaobin/development/Resources/
+
+
+# knife4j swagger 文档接口
+knife4j:
+  enable: true
+  production: false
